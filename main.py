@@ -48,3 +48,4 @@ def check_price():
     price_element3 = driver.find_element(By.XPATH, "//strong[contains(text(),'579.00')]") 
     price3 = float(price_element3.text)
 
+    driver.quit() 
