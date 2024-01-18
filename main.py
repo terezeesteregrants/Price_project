@@ -5,6 +5,8 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 import time
+import datetime
+import pandas as pd
 
 def send_email(subject, message):
     email = "terezegrants@gmail.com"
@@ -34,8 +36,6 @@ def check_price():
     url2 = "https://www.euronics.lv/it/plansetdatori/plansetdatori/mpq13hcfsa/apple-ipad-10-2022-wi-fi-64-gb-zila-plansetdators"
     driver.get(url2)
     time.sleep(2)
-    # find = driver.find_element(By.ID, "cookiescript_accept")
-    # find.click()
     price_element2 = driver.find_element(By.XPATH, "//span[@class='price__original']")
     price2 = float(price_element2.text.replace("€", "").replace("&nbsp;", "").replace(",", "."))
 
@@ -43,8 +43,6 @@ def check_price():
     url3 = "https://www.rdveikals.lv/products/lv/149/452645/sort/5/filter/0_0_0_0/iPad-10th-Gen-10.9-64GB-Wi-Fi-Blue-MPQ13HC-A-planšetdators.html"
     driver.get(url3)
     time.sleep(2)
-    # find = driver.find_element(By.ID, "CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll")
-    # find.click()
     price_element3 = driver.find_element(By.XPATH, "//strong[contains(text(),'579.00')]") 
     price3 = float(price_element3.text)
 
@@ -60,3 +58,5 @@ def check_price():
         send_email("Lielisks darījums Tavam Apple produktam!", f"Cenas visās vietnēs ir vienādas. Iepērcies no Tet. lv: {url1}\nIepērcies no Euronics.lv: {url2}\nIepērcies no rdveikals. lv: {url3}")
 
 check_price()
+
+
