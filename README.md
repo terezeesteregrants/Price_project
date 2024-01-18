@@ -16,17 +16,14 @@ Uzdevums ir izveidot programmu, kas salīdzina Apple iPad 10.9" Wi-Fi 64GB - Blu
 
 Mērķis ir saņemt paziņojumus un uzzināt, kurā vietnē ir visizdevīgākais piedāvājums izvēlētajam produktam. 
 
-**Programmu jāiesniedz kā result.py failu.**
 
 ### Izmantotās bibliotēkas
 
-1. `pandas` 
-Izmantots, lai analizētu un saglabātu datus. Šajā uzdevumā tiek izmantots, lai apstrādātu datus, izveidotu DataFrame, saglabājot to Excel failā.
 
-2. `selenium`
+1. `selenium`
 Izmantots, lai iegūtu mājaslapu datus izvēlētajiem internetveikaliem. Galvenokārt, bibliotēka ļauj automatizēt pārlūku darbības, piemēram, mūsu uzdevumā, lai iegūt datus no tīmekļa ar 'find_element' funkciju, kā arī izpilda 'time_sleep' funkciju, kas nodrošina ielādes gaidīšanu.
 
-3. `smtplib`
+2. `smtplib`
 Nodrošina e-pastu nosūtīšanas funkciju, izmantojot Gmail SMTP serveri.
 
 
