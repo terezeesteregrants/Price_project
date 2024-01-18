@@ -49,3 +49,14 @@ def check_price():
     price3 = float(price_element3.text)
 
     driver.quit() 
+
+    if price1 < price2 and price1 < price3:
+        send_email("Lielisks darījums Tavam izvēlētjama Apple produktam!", f"Cena no Tet.lv ir viszemāka. Iepērcies: {url1}")
+    elif price2 < price1 and price2 < price3:
+        send_email("Lielisks darījums Tavam izvēlētjama Apple produktam!", f"Cena no Euronics.lv ir viszemāka. Iepērcies: {url2}")
+    elif price3 < price1 and price3 < price2:
+        send_email("Lielisks darījums Tavam izvēlētjama Apple produktam!", f"Cena no rdveikals.lv ir viszemāka. Iepērcies: {url3}")
+    else:
+        send_email("Lielisks darījums Tavam Apple produktam!", f"Cenas visās vietnēs ir vienādas. Iepērcies no Tet. lv: {url1}\nIepērcies no Euronics.lv: {url2}\nIepērcies no rdveikals. lv: {url3}")
+
+check_price()
