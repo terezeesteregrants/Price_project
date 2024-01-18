@@ -6,7 +6,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 import time
 import datetime
-import pandas as pd
 
 def send_email(subject, message):
     email = "terezegrants@gmail.com"
