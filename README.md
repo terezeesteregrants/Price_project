@@ -15,7 +15,7 @@ Uzdevums ir izveidot programmu, kas salīdzina Apple iPad 10.9" Wi-Fi 64GB - Blu
 
 5. Piefiksējiet datus un cenu izmaiņas (ja tādas ir), excel datnē, izveidojot failu `price_tracker.xslx`, norādt vietnes nosaukumu, cenu un laiku, kurā tas tiek apskatīts. 
 
-Mērķis ir uzzināt, kurā vietnē ir visizdevīgākais piedāvājums izvēlētajam produktam.
+Mērķis ir uzzināt, kurā vietnē ir visizdevīgākais piedāvājums izvēlētajam produktam, kā arī pārskatāmi to aplūkot Excel faila datnē.
 
 **Programmu jāiesniedz kā result.py failu.**
 
@@ -38,4 +38,6 @@ Nodrošina e-pastu nosūtīšanas funkciju, izmantojot Gmail SMTP serveri.
 2. Izveidojiet savu gmail e-pastu (ja tāda nav). Iegūstiet no Google App Passwords kodēta forma parolei, lai izmantotu `smtplib` bibliotēku (norādījumus var apsatīt norādītajā linkā kā to panākt: https://youtu.be/ueqZ7RL8zxM?si=PEVj_CAWWrwCrULX)
 
 3.Salīdziniet cenas, attiecīgi izsūtiet epastu, kur norāda mājaslapas, kur cenas viszemākās vai visas ja cenas vienādas.
+
+4.Saglabājiet datus Excel failā `price_tracker.xlsx`, kur būs norādīta informācija par izpildes laiku, veikalu un cenu.
 
